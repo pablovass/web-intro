@@ -31,7 +31,14 @@
         </label>
         <label for="pais">
             <span>Donde vives</span>
-            <input type="text" id="pais" name="pais" autocomplete="country" required />
+            <!--<input type="text" id="pais" name="pais" autocomplete="country" required />-->
+            <!--de esta forma es mas practico por que podes escribir de ser nesesario-->
+            <input list="paises"><datalist id="paises">
+                <option value="argentina">argentina</option>
+                <option value="peru">peru</option>
+                <option value="francia">francia</option>
+                <option value="canada">canada</option>
+            </datalist>
         </label>
         <label for="cp">
             <span>Cual es tu codigo postal? </span>
